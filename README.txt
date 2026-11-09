@@ -1,7 +1,7 @@
-SS13 40.84.9 rebuilt source (July 2004, BYOND 338). Compiles with 0 errors to a .dmb that is CLOSE to the original
-cellautomata.dmb (md5 b228461ed0231a0c12e97af466061d06, 680829 bytes) but NOT yet byte-identical:
-audit DISTANCE 92 (types, map, objects, world, resources identical; every proc line matches; 5 procs differ in call
-binding and 24 strings / 12 vars are in a different pool order - all compile timing, see C:\ss40849\NOTES.md).
+SS13 40.84.9 rebuilt source (July 2004, BYOND 338). Compiles with 0 errors to a .dmb that is BYTE-IDENTICAL to the
+original cellautomata.dmb (md5 b228461ed0231a0c12e97af466061d06, 680829 bytes): cmp identical, audit DISTANCE 0 in every
+section, 3 compiles identical (verified again 2026-11-09 from a clean copy of this repo).
+Route from DISTANCE 92 to 0 (call binding and string/var pool order, all compile timing): C:\ss40849\NOTES.md, Session 2.
 
 Compiler: BYOND 338 (C:\s40\byond338\x), header "world bin v338 / min compatibility v338" as in the original.
   sh C:/ss40849/work/cmp.sh <folder>        (compiles <folder>/cellautomata.dme, prints md5 + audit against the original)
